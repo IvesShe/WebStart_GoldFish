@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>金魚都能懂網頁設計筆記 : Transition 網頁動畫</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <style type="text/css">
+    .box {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #f00;
+    }
+
+    .box1 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #f00;
+      /* animation: 動畫名稱 播放時間 延遲執行的時間 速度 次數 方向 填充模式 播放狀態; */
+      animation: ives 1s infinite alternate;
+    }
+
+    @keyframes ives {
+      0% {
+        border-radius: 50%;
+      }
+
+      100% {
+        border-radius: 0%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box"></div>
+  <div class="box1"></div>
+
+</body>
+
+</html>

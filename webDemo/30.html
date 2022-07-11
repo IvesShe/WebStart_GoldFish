@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>金魚都能懂網頁設計筆記 : JQuery事件</title>
+  <style type="text/css">
+    .box-a {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      background-color: #aaa;
+    }
+
+    .box-b {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      background-color: #faa;
+    }
+
+    .content {
+      display: none;
+    }
+
+    .product-title {
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>金魚都能懂網頁設計筆記 : JQuery事件</h1>
+
+  <div class="box-a">box-a</div>
+  <div class="box-b">box-b</div>
+
+
+  <div class="product-title">產品介紹</div>
+  <div class="content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem magnam hic impedit ipsa quos quam unde. Iusto
+    ea quisquam vel nisi quidem autem optio illum, libero iure delectus veniam.
+  </div>
+
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+  <script type="text/JavaScript">
+    // $(document).ready(function() {
+    //   console.log("@@@金魚都能懂網頁設計筆記 : JQuery事件")
+    // })    
+
+    $(function() {
+      console.log("@@@金魚都能懂網頁設計筆記 : JQuery事件")
+
+      $(".box-a").dblclick(function(){
+        $(".box-b").toggle()
+      })
+
+      $(".product-title").click(function(){
+        $('.content').toggle()
+      })
+    });
+
+  </script>
+</body>
+
+</html>

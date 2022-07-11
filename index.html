@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>金魚都能懂網頁設計入門</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,700,900&display=swap" rel="stylesheet">
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .banner {
+      width: 100%;
+      height: 100vh;
+      /* height: 700px; */
+      background-color: #ccc;
+      background: linear-gradient(100deg, #fa5 50%, transparent 50%) center center / 100% 100%,
+        url("./images/COVER-fish.jpg") right center / auto 100%;
+      background-color: #000;
+    }
+
+    .container {
+      width: 1200px;
+      min-width: 1440px;
+      height: 100%;
+      margin: auto;
+    }
+
+    .banner-txt {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .banner-txt h1 {
+      font-size: 80px;
+      border-bottom: 1px solid #333;
+      font-weight: 900;
+      padding-bottom: 0.3em;
+      margin-bottom: 0.3em;
+    }
+
+    .banner-txt h1 small {
+      display: block;
+      font-size: 53px;
+      font-weight: 700;
+    }
+
+    .banner-txt h2 {
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    .banner-txt p {
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    li {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    /* a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #fff;
+    } */
+    .banner-link {
+      display: flex;
+    }
+
+    .banner-link ul {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .banner-link li {
+      display: flex;
+    }
+
+    .banner-link a {
+      font-family: 'Noto Sans TC', sans-serif;
+      text-decoration: none;
+      color: #fff;
+      /* text-shadow: .1em .1em #333; */
+      padding: 5px 1em;
+      position: relative;
+      transform: translateY(0px);
+      transition: .3s;
+    }
+
+    .banner-link a:hover {
+      transform: translateY(-10px);
+    }
+
+    .banner-link a:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      bottom: -5px;
+      height: 0;
+      border-bottom: 1px solid #fff;
+      transition: .3s;
+    }
+
+    .banner-link a:hover:after {
+      left: 0;
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="banner">
+    <div class="container">
+      <div class="banner-txt">
+        <h1>
+          金魚都能懂的
+          <small>
+            網頁設計筆記
+          </small>
+        </h1>
+        <div class="banner-link">
+          <ul>
+            <li><a href="./webDemo/20.html">排個稀飯版</a></li>
+            <li><a href="./webDemo/21.html">Transition 網頁動畫</a></li>
+            <li><a href="./webDemo/22.html">Animation 網頁動畫</a></li>
+            <li><a href="./webDemo/23.html">媒體查詢</a></li>
+            <li><a href="./webDemo/23-1.html">媒體查詢 23-1</a></li>
+            <li><a href="./webDemo/24.html">RWD入門</a></li>
+            <li><a href="./webDemo/25.html">RWD試排版</a></li>
+            <li><a href="./webDemo/26.html">RWD選單製作</a></li>
+            <li><a href="./webDemo/26-1.html">RWD選單製作 02</a></li>
+            <li><a href="./webDemo/27.html">Bootstrap 入門</a></li>
+            <li><a href="./webDemo/28.html">Bootstrap 組件入門</a></li>
+            <li><a href="./webDemo/30.html">JQuery事件</a></li>
+            <li><a href="./webDemo/30-1.html">JQuery事件 02</a></li>
+            <li><a href="./webDemo/31.html">JQuery CSS控制</a></li>
+            <li><a href="./webDemo/32.html">JQuery CSS控制 02</a></li>
+            <li><a href="./webDemo/33.html">JQuery動畫</a></li>
+            <li><a href="./webDemo/34.html">JQuery動畫 02</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

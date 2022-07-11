@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>金魚都能懂網頁設計筆記 : JQuery動畫</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .controller {
+      display: flex;
+      padding: 6px 10px;
+      background-color: #000;
+      color: #fff;
+      width: 300px;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+
+    .text {
+      width: 300px;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #ccc;
+    }
+
+    .text.x {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#" class="controller controller1">開/關</a>
+  <div class="text text1">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, officia obcaecati voluptas repellendus ab illo
+    ipsum quidem vitae praesentium! Officiis quisquam qui ab error assumenda quidem nemo, enim ad deserunt!
+  </div>
+  <a href="#" class="controller controller2">開/關</a>
+  <div class="text text2">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, officia obcaecati voluptas repellendus ab illo
+    ipsum quidem vitae praesentium! Officiis quisquam qui ab error assumenda quidem nemo, enim ad deserunt!
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+  <script type="text/JavaScript">
+
+    $(function() {
+
+      $('.controller1').click(function(){
+        $('.text1').fadeToggle()
+      })
+
+      $('.controller2').click(function(){
+        $('.text2').slideToggle()
+      })
+
+    });
+
+  </script>
+</body>
+
+</html>
